@@ -6,6 +6,9 @@ body {
 *{
 	box-sizing: border-box;
 }
+.mobile-only{
+	display: none;
+}
 
 .container-top {
 	position: absolute;
@@ -85,17 +88,13 @@ text-align: center;
 		background-color: #f0f5f5;
 	}
 .pad{
-	padding: 105px 0;
+	padding: 100px 0;
 }
 .container-menu {
 	margin: 0px;
 	width: 100%;
 	min-height: 160px;
 	padding: 100px 300px;
-}
-.row {
-	margin: 0;
-	padding: 0;
 }
 .column {
 	display: inline-block;
@@ -165,6 +164,7 @@ text-align: center;
 	position:relative;
 	
 }
+
 .column-picture img{
 	width: 100%;
 	transition: all 1.5s ease;
@@ -183,13 +183,20 @@ text-align: center;
 .round-box{
 	border-radius: 50%;
     background-color:  #cc3300;
-    padding: 40px 20px;
+    padding: 50px 20px;
     margin: auto;
-    width: 20%;
+    width: 135px;
     text-align: center;
     font-size: 20px;
     vertical-align: middle;
     letter-spacing: 3px;
+}
+.column-picture h2 {
+    width: 500px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    max-width: 100%;
 }
 
 .v-align-text{
@@ -475,8 +482,72 @@ input[type=text] {
 	font-size: 162px;
 }
 }
+@media(max-width: 1140px){
+	.custom-container{
+		padding: 0 15px;
+	}
+	.custom-title h1{
+		font-size: 143px;
+
+	}
+}
 @media(max-width: 1024px){
 	.custom-title h1{
 		font-size: 120px;
 	}
+	.pad{
+		padding: 50px 0;
+	}
 }
+@media(max-width: 768px){
+	.custom-title h1{
+		font-size: 66px;
+	}
+	.row-testimonial{
+		margin: 0;
+	}
+	.column{
+		display: block;
+		width: 100%;
+		margin-bottom: 15px;
+
+	}
+	.column-picture{
+		display: block;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.row-picture{
+		margin: 0;
+	}
+	.custom-row{
+		margin: 0;
+	}
+	.desktop-only{
+		display: none;
+	}
+	.mobile-only{
+		display: block;
+
+	}
+	.column-menu{
+		display: block;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.column-pic{
+		margin-bottom: 0;
+	}
+	.column-testimonial{
+		display: block;
+		width: 100%;
+	}
+	.autor{
+		text-align: left;
+	}
+	.autor img{
+		width: 15%;
+		display: inline-block;
+	}
+}
+
