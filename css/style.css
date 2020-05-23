@@ -362,19 +362,13 @@ text-align: center;
 }
 .newsletter span{
 	width: 50%;
-	display: inline-table;
+	display: inline-block;
 	padding: 20px;
 	font-size: 20px;
 }
-
-.row-newsletter{
+.newsletter form input, .newsletter form a{
 	display: inline-block;
-	width: 100%;
-}
-.column-newsletter{
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
+	width: 30%;
 }
 .button-subscribe{
 	font-family: 'Abel', sans-serif;
@@ -490,6 +484,7 @@ input[type=text] {
 		font-size: 143px;
 
 	}
+
 }
 @media(max-width: 1024px){
 	.custom-title h1{
@@ -498,12 +493,16 @@ input[type=text] {
 	.pad{
 		padding: 50px 0;
 	}
+	.newsletter span{
+		width: 100%;
+	}
 }
 @media(max-width: 768px){
 	.custom-title h1{
 		font-size: 66px;
+		letter-spacing: 20px;
 	}
-	.row-testimonial{
+	.row-testimonial, .row-blog, .row-picture{
 		margin: 0;
 	}
 	.column{
@@ -516,9 +515,6 @@ input[type=text] {
 		display: block;
 		width: 100%;
 		margin-bottom: 15px;
-	}
-	.row-picture{
-		margin: 0;
 	}
 	.custom-row{
 		margin: 0;
@@ -541,13 +537,40 @@ input[type=text] {
 	.column-testimonial{
 		display: block;
 		width: 100%;
+		margin-bottom: 50px;
 	}
 	.autor{
 		text-align: left;
 	}
 	.autor img{
 		width: 15%;
-		display: inline-block;
+
 	}
+	.column-blog{
+		display: block;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.column-footer{
+		display: block;
+		width: 100%;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+}
+@media(max-width: 640px){
+	.custom-title h1{
+		display: none;
+	}
+}
+@media(max-width: 480px){
+	.newsletter form input, .newsletter form a{
+		width: 100%;
+		display: block;
+	}
+	.newsletter form input{
+		margin-bottom: 10px;
+	}
+
 }
 
