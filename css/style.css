@@ -556,11 +556,23 @@ input[type=text] {
 		width: 100%;
 		margin-bottom: 15px;
 		text-align: center;
+		padding: 0;
 	}
 }
 @media(max-width: 640px){
 	.custom-title h1{
 		display: none;
+	}
+	.custom-title h2{
+		font-size: 40px;
+		padding: 5px 0;
+	}
+	.column-blog img{
+		width: 100%;
+	}
+	.text-blog{
+		display: block;
+		width: 100%;
 	}
 }
 @media(max-width: 480px){
